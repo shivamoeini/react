@@ -5,16 +5,16 @@ export default function Nav() {
         color:"orange",
     }
   return (
-    <div>
-      <h3>
-          <NavLink to="/" >Home</NavLink>
-      </h3>
-      <h3>
-      <NavLink to="/course">Course</NavLink>
-      </h3>
-      <h3>
-      <NavLink to="/about" >About</NavLink>
-      </h3>
+    <div style={{display:"flex",justifyContent:"space-around"}}>
+      <h2>
+          <NavLink to="/" style={({isActive})=>(isActive?activeStyle:null)}>Home</NavLink>
+      </h2>
+      <h2>
+      <NavLink to="/course" style={({isActive})=>(isActive?activeStyle:null)}>Course</NavLink>
+      </h2>
+      <h2>
+      <NavLink to="/about" style={({isActive})=>(isActive?activeStyle:null)}>About</NavLink>
+      </h2>
     </div>
   );
 }
