@@ -6,7 +6,7 @@ export default function Nav() {
        
     }
   return (
-    <div style={{display:"flex",justifyContent:"space-around" }}>
+    <div className="navbar" style={{display:"flex",justifyContent:"space-around" }}>
       <h2>
           <NavLink to="/" style={({isActive})=>(isActive?activeStyle:null)}>Home</NavLink>
       </h2>
