@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import{Button, Form}from "react-bootstrap"
+import{Button} from "react-bootstrap"
 
 export default function CreateCourse() {
     const [updateCourse,setUpdateCourse]=useState({
@@ -29,13 +29,9 @@ export default function CreateCourse() {
       
         <div>
             <lable htmlFor="authorId">Course authorId</lable>
-            <input type="text" name="title" value={updateCourse.authorId} onChange={e=>setUpdateCourse({...updateCourse,authorId:e.target.value})}/>
+            <input type="text" name="authorId" value={updateCourse.authorId} onChange={e=>setUpdateCourse({...updateCourse,authorId:e.target.value})}/>
         </div>
 
-        <div>
-            <lable htmlFor="title">Course Title</lable>
-            <input type="text" name="title" value={updateCourse.title} onChange={e=>setUpdateCourse({...updateCourse,title:e.target.value})}/>
-        </div>
         <div>
             <lable htmlFor="slug">Course slug</lable>
             <input type="text" name="slug" value={updateCourse.slug} onChange={e=>setUpdateCourse({...updateCourse,slug:e.target.value})}/>

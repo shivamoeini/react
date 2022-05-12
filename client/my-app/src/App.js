@@ -7,6 +7,8 @@ import Nav from "./component/Nav";
 import PageNotFound from "./component/PageNotFound";
 import Welcome from "./component/Welcome";
 import "./css/index.css"
+import ManageCoursePage from "./component/MangeCoursePage";
+import CreateCourse from "./component/CreateCourse";
 function App() {
  return(
  <>
@@ -20,7 +22,8 @@ function App() {
 
 
      <Route path="/course" element={<CoursePage/> }/>
-
+     <Route path='/course/:slug' element={<ManageCoursePage />} />
+    <Route path="/create-course" element={< CreateCourse/>}/>
      <Route path="*" element={<PageNotFound/>}/>
  </Routes>
  </>
