@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React,{useState} from "react"
 import { Button } from "react-bootstrap";
 import { useParams, useLocation } from "react-router-dom";
 
@@ -64,7 +64,7 @@ export default function MangeCoursePage() {
           />
         </div>
         <div>
-          <label htmlFor='category'>Course category</label>
+          <lable htmlFor='category'>Course category</lable>
           <input
             type='text'
             name='category'
