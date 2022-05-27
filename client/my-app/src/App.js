@@ -9,23 +9,7 @@ import Welcome from "./component/Welcome";
 import ManageCoursePage from "./component/MangeCoursePage";
 import  CreateCourse from "./component/CreateCourse";
 import "./css/index.css"
-import { useState,useEffect } from 'react';
-
 function App() {
-  const [country,setcountry]=useState([]);
-  useEffect(() => {
-    const dataApi= async()=>{
-      try {
-        const data=await fetch('https://restcountries.com/v3.1/all');
-       const json=await data.json();
-       setcountry(json)
-       console.log(json);
-    } catch (error) {
-      console.log(error);
-    }
-  }
-  dataApi()
-   }, []);
  return(
  <>
  <Nav/>
