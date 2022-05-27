@@ -6,9 +6,9 @@ import CoursePage from "./component/CoursePage";
 import Nav from "./component/Nav";
 import PageNotFound from "./component/PageNotFound";
 import Welcome from "./component/Welcome";
-import "./css/index.css"
 import ManageCoursePage from "./component/MangeCoursePage";
-import CreateCourse from "./component/CreateCourse";
+import  CreateCourse from "./component/CreateCourse";
+import "./css/index.css"
 function App() {
  return(
  <>
